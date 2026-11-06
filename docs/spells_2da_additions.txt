@@ -1,0 +1,53 @@
+# Craft Powers Spells 2DA Additions - STEP BY STEP
+
+## Step 1: Update Header
+The header has already been updated with the new columns:
+- Warlord (position 14)
+- Prince (position 15)  
+- Priestess (position 16)
+
+## Step 2: Add **** to existing spells
+For ALL existing spells (rows 0-839), add three **** entries for the new Warlord, Prince, Priestess columns.
+
+This can be done by:
+1. Opening spells.2da in a text editor
+2. For each existing row, after the "Queen" column value, add "     ****     ****     ****" (three times **** with whitespace)
+
+OR use a script/editor that can bulk-add columns.
+
+## Step 3: Add new Craft spell rows
+Add these 33 new rows AFTER row 839 (PLAYER_TOOL_10):
+
+840:Cr_WeaveShield:16777603:****:T:T:-:0x00:0x2B:NW_S0_CrShield:0:****:****:****:****:****:****:****:1
+841:Cr_Strengthen:16777605:****:T:T:-:0x00:0x2B:NW_S0_CrStr:0:****:****:****:****:****:****:****:1
+842:Cr_MinorHealing:16777607:****:T:T:-:0x00:0x2B:NW_S0_CrHeal:0:****:****:****:****:****:****:****:1
+843:Cr_MinorIllusion:16777609:****:I:S:-:0x00:0x2A:NW_S0_CrIllus:0:****:****:****:****:****:****:****:1
+844:Cr_Seduction:16777611:****:E:T:-:0x00:0x2B:NW_S0_CrSeduction:0:****:****:****:****:****:****:****:1
+845:Cr_Scrying:16777613:****:D:L:-:0x00:0x2A:NW_S0_CrScrying:0:****:****:****:****:****:****:****:1
+846:Cr_Summoning:16777615:****:C:M:-:0x00:0x2C:NW_S0_CrSummon:0:****:****:****:****:****:****:****:1
+847:Cr_MajorTransformation:16777617:****:T:M:-:0x00:0x2A:NW_S0_CrTransform:0:****:****:****:****:****:****:****:1
+848:Cr_BattleFury:16777619:****:T:T:-:0x00:0x2A:NW_S0_CrBattleFury:****:****:****:****:1:****:****:1
+849:Cr_ShieldBreaker:16777621:****:V:T:-:0x00:0x2B:NW_S0_CrShieldBrk:****:****:****:****:1:****:****:1
+850:Cr_CombatMastery:16777623:****:T:T:-:0x00:0x2A:NW_S0_CrCombatMst:****:****:****:****:****:****:1:1
+851:Cr_FuryoftheWarlord:16777625:****:V:S:-:0x00:0x2E:NW_S0_CrWarlordFry:****:****:****:****:****:****:1:1
+852:Cr_SocialGrace:16777627:****:E:T:-:0x00:0x2A:NW_S0_CrSocialGra:****:****:****:****:****:1:****:1
+853:Cr_ShadowWalking:16777629:****:T:T:-:0x00:0x2A:NW_S0_CrShadowWalk:****:****:****:****:****:1:****:1
+854:Cr_Presence:16777631:****:E:L:-:0x00:0x2F:NW_S0_CrPresence:****:****:****:****:****:1:****:1
+855:Cr_Cleanse:16777633:****:T:T:-:0x00:0x2B:NW_S0_CrCleanse:****:1:****:****:****:****:****:1
+856:Cr_Mend:16777635:****:T:T:-:0x00:0x2B:NW_S0_CrMend:****:1:****:****:****:****:****:1
+857:Cr_Restoration:16777637:****:T:T:-:0x00:0x2B:NW_S0_CrRestor:****:1:****:****:****:****:****:1
+858:Cr_Revitalize:16777639:****:T:T:-:0x00:0x2A:NW_S0_CrRevital:****:1:****:****:****:****:****:1
+859:Cr_AbyssalGuidance:16777641:****:E:T:-:0x00:0x2B:NW_S0_CrAbyssGuid:****:****:****:****:****:****:1:1
+860:Cr_Sanctify:16777643:****:E:L:-:0x00:0x2F:NW_S0_CrSanctify:****:****:****:****:****:****:1:1
+861:Cr_Blessing:16777645:****:E:T:-:0x00:0x2A:NW_S0_CrBlessing:****:****:****:****:****:****:1:1
+862:Cr_AuraReading:16777647:****:D:M:-:0x00:0x2A:NW_S0_CrAuraRead:****:****:****:****:****:****:1:1
+863:Cr_Entrap:16777649:****:I:S:-:0x00:0x2B:NW_S0_CrEntrap:****:****:1:****:****:****:****:1
+864:Cr_VenomTouch:16777651:****:N:T:-:0x00:0x2B:NW_S0_CrVenomTouch:****:****:1:****:****:****:****:1
+865:Cr_DreamWalker:16777653:****:I:L:-:0x00:0x2A:NW_S0_CrDreamWalk:****:****:1:****:****:****:****:1
+866:Cr_GreaterIllusion:16777655:****:I:L:-:0x00:0x2A:NW_S0_CrGrtrIllus:****:****:1:****:****:****:****:1
+867:Cr_Madness:16777657:****:E:M:-:0x00:0x2B:NW_S0_CrMadness:****:****:1:****:****:****:****:1
+868:Cr_LandsBounty:16777659:****:T:L:-:0x00:0x2F:NW_S0_CrLandsBounty:****:****:****:1:****:****:****:1
+869:Cr_TerritorialSense:16777661:****:D:L:-:0x00:0x2A:NW_S0_CrTerrSense:****:****:****:1:****:****:****:1
+870:Cr_Dominion:16777663:****:E:M:-:0x00:0x2F:NW_S0_CrDominion:****:****:****:1:****:****:****:1
+871:Cr_CourtlyPresence:16777665:****:E:T:-:0x00:0x2A:NW_S0_CrCourtPres:****:****:****:1:****:****:****:1
+872:Cr_WeatherSense:16777667:****:T:L:-:0x00:0x2A:NW_S0_CrWeatherSns:****:****:****:1:****:****:****:1
